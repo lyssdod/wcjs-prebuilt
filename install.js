@@ -44,6 +44,7 @@ function getWCJS(data) {
                     
                     if(asset.name.toLowerCase().indexOf('vlc') == -1 && process.platform !== 'linux'){
                         console.log(asset.name, '\x1b[31m', 'doesn\'t include VLC','\x1b[0m');
+                        console.log(process.platform)
                         return true;
                     }
 
